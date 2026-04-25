@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import AppShell from './components/layout/AppShell'
 import HomeView from './views/HomeView'
@@ -106,8 +106,8 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AnimatedRoutes />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
