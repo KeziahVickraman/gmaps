@@ -91,7 +91,7 @@ export default function RestaurantViewB() {
   }, [dietary, openNow, decisionAnswers, showAll, scorePlace])
 
   return (
-    <div className="flex flex-col h-full overflow-hidden relative">
+    <div className="flex flex-col h-full overflow-hidden">
 
       {/* ── Header ───────────────────────────────────────────────── */}
       <div className="px-4 pt-4 pb-3 border-b border-border flex items-center justify-between flex-shrink-0">
@@ -103,6 +103,19 @@ export default function RestaurantViewB() {
         >
           Version B
         </span>
+      </div>
+
+      {/* ── Help me decide button ─────────────────────────────────── */}
+      <div className="px-4 py-3 border-b border-border flex-shrink-0">
+        <button
+          onClick={() => setShowDecision(true)}
+          aria-label="Help me decide"
+          className="flex items-center gap-2 text-white rounded-chip px-4 py-3 shadow-card hover:opacity-90 active:scale-95 transition-state"
+          style={{ minHeight: '48px', backgroundColor: 'var(--color-primary)' }}
+        >
+          <Sparkles size={16} aria-hidden="true" />
+          <span className="font-dm font-medium text-sm">Help me decide</span>
+        </button>
       </div>
 
       {/* ── Error banner ─────────────────────────────────────────── */}
@@ -171,7 +184,7 @@ export default function RestaurantViewB() {
       )}
 
       {/* ── Results ──────────────────────────────────────────────── */}
-      <div className="flex-1 overflow-y-auto pb-24">
+      <div className="flex-1 overflow-y-auto">
         {loading ? (
           <div role="status" aria-label="Loading restaurants…" className="flex flex-col gap-3 p-4">
             <span className="sr-only">Loading restaurants…</span>
@@ -196,19 +209,6 @@ export default function RestaurantViewB() {
             ))}
           </div>
         )}
-      </div>
-
-      {/* ── Help me decide FAB ───────────────────────────────────── */}
-      <div className="absolute bottom-6 right-4">
-        <button
-          onClick={() => setShowDecision(true)}
-          aria-label="Help me decide"
-          className="flex items-center gap-2 bg-accent text-white rounded-chip px-4 py-3 shadow-card hover:opacity-90 active:scale-95 transition-state"
-          style={{ minHeight: '48px' }}
-        >
-          <Sparkles size={16} aria-hidden="true" />
-          <span className="font-dm font-medium text-sm">Help me decide</span>
-        </button>
       </div>
 
       {/* ── Decision flow sheet ──────────────────────────────────── */}
