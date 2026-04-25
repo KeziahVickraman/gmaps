@@ -49,6 +49,17 @@ export default function RestaurantViewC() {
     return () => clearTimeout(t)
   }, [])
 
+  useEffect(() => {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://gmaps-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    window.disqus_config = function () {
+      this.page.url = 'https://gmaps-52x.pages.dev/#/restaurants/c';
+      this.page.identifier = 'restaurants-c';
+    };
+  }, []);
+
   const toggleDietary = (opt) => {
     if (opt === 'All') { setDietary([]); return }
     setDietary(prev => prev.includes(opt) ? prev.filter(d => d !== opt) : [...prev, opt])
@@ -222,6 +233,7 @@ export default function RestaurantViewC() {
             ))}
           </div>
         )}
+        <div id="disqus_thread"></div>
       </div>
 
       {/* ── Natural language sheet ───────────────────────────────── */}
