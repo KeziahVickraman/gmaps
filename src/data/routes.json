@@ -1,0 +1,55 @@
+[
+  {
+    "id": "route_001",
+    "label": "Fastest",
+    "mode": "driving",
+    "eta": 22,
+    "distance": 14.2,
+    "traffic": "moderate",
+    "hasToll": true,
+    "steps": [
+      { "instruction": "Head west on Bedok North Ave 1", "distance": "200m", "icon": "arrow-right" },
+      { "instruction": "Turn left onto Bedok North Rd", "distance": "500m", "icon": "turn-left" },
+      { "instruction": "Merge onto PIE (Pan-Island Expressway) toward Jurong", "distance": "10.1km", "icon": "arrow-right" },
+      { "instruction": "Take exit 17 onto CTE toward City", "distance": "1.8km", "icon": "arrow-right" },
+      { "instruction": "Keep right at Orchard Flyover", "distance": "800m", "icon": "arrow-right" },
+      { "instruction": "Arrive at Orchard Road on your right", "distance": "0m", "icon": "map-pin" }
+    ]
+  },
+  {
+    "id": "route_002",
+    "label": "No Tolls",
+    "mode": "driving",
+    "eta": 31,
+    "distance": 16.8,
+    "traffic": "light",
+    "hasToll": false,
+    "steps": [
+      { "instruction": "Head west on Bedok North Ave 1", "distance": "200m", "icon": "arrow-right" },
+      { "instruction": "Turn left onto New Upper Changi Rd", "distance": "2.1km", "icon": "turn-left" },
+      { "instruction": "Continue onto Kembangan Rd", "distance": "1.3km", "icon": "arrow-right" },
+      { "instruction": "Turn right onto Upper Paya Lebar Rd", "distance": "3.2km", "icon": "turn-right" },
+      { "instruction": "Continue onto Thomson Rd", "distance": "4.8km", "icon": "arrow-right" },
+      { "instruction": "Turn left onto Scotts Rd toward Orchard", "distance": "1.2km", "icon": "turn-left" },
+      { "instruction": "Arrive at Orchard Road", "distance": "0m", "icon": "map-pin" }
+    ]
+  },
+  {
+    "id": "route_003",
+    "label": "Scenic",
+    "mode": "driving",
+    "eta": 38,
+    "distance": 19.1,
+    "traffic": "light",
+    "hasToll": false,
+    "steps": [
+      { "instruction": "Head north on Bedok Reservoir Rd", "distance": "1.0km", "icon": "arrow-right" },
+      { "instruction": "Turn left onto Upper Changi Rd East", "distance": "2.3km", "icon": "turn-left" },
+      { "instruction": "Pass East Coast Park connector", "distance": "3.4km", "icon": "arrow-right" },
+      { "instruction": "Continue onto Marine Parade Rd", "distance": "2.8km", "icon": "arrow-right" },
+      { "instruction": "Turn right onto Still Rd South", "distance": "1.2km", "icon": "turn-right" },
+      { "instruction": "Merge onto KPE toward City", "distance": "5.2km", "icon": "arrow-right" },
+      { "instruction": "Take exit onto Orchard Rd", "distance": "0m", "icon": "map-pin" }
+    ]
+  }
+]

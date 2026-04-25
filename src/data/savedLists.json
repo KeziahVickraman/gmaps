@@ -1,0 +1,20 @@
+[
+  {
+    "id": "list_001",
+    "name": "Date Night",
+    "placeIds": ["place_003", "place_017", "place_031"],
+    "coverPhoto": "https://picsum.photos/seed/list001/600/400"
+  },
+  {
+    "id": "list_002",
+    "name": "Healthy Weekday Lunches",
+    "placeIds": ["place_001", "place_006", "place_010", "place_015", "place_025"],
+    "coverPhoto": "https://picsum.photos/seed/list002/600/400"
+  },
+  {
+    "id": "list_003",
+    "name": "Family Outings",
+    "placeIds": ["place_004", "place_033", "place_047"],
+    "coverPhoto": "https://picsum.photos/seed/list003/600/400"
+  }
+]

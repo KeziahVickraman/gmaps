@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #F7F6F3;
+    --color-surface: #FFFFFF;
+    --color-surface-raised: #EFEFED;
+    --color-primary: #1A6B4A;
+    --color-primary-light: #E8F5EE;
+    --color-accent: #E85D26;
+    --color-text-primary: #141414;
+    --color-text-secondary: #6B6B6B;
+    --color-text-muted: #ABABAB;
+    --color-border: #E2E1DE;
+    --color-error: #CC2B2B;
+    --color-warning: #D97706;
+    --color-success: #1A6B4A;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .heading {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+  }
+
+  /* Focus rings for WCAG 2.2 AA */
+  *:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white font-medium rounded-btn px-6 py-3 transition-all duration-200 hover:bg-opacity-90 active:scale-95 flex items-center justify-center gap-2;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .btn-secondary {
+    @apply bg-surface text-text-primary border border-border font-medium rounded-btn px-6 py-3 transition-all duration-200 hover:bg-surface-raised active:scale-95 flex items-center justify-center gap-2;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .card {
+    @apply bg-surface rounded-card shadow-card border border-border;
+  }
+
+  .chip {
+    @apply rounded-chip border border-border bg-surface text-text-secondary text-sm font-medium px-3 cursor-pointer transition-all duration-200 inline-flex items-center gap-1.5;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 44px;
+  }
+
+  .chip-active {
+    @apply bg-primary text-white border-primary;
+  }
+
+  .chip-inactive {
+    @apply bg-surface text-text-secondary border-border hover:border-primary hover:text-primary;
+  }
+
+  .label-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+@layer utilities {
+  .font-syne {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .font-dm {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .transition-panel {
+    transition: all 300ms ease;
+  }
+
+  .transition-state {
+    transition: all 200ms ease;
+  }
+
+  .shadow-card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.06);
+  }
+}

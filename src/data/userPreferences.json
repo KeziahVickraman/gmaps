@@ -1,0 +1,8 @@
+{
+  "dietary": ["vegetarian"],
+  "cuisines": ["Japanese", "Mediterranean", "Indian"],
+  "priceRange": [1, 2],
+  "ambience": ["quiet", "casual"],
+  "pastPlaceIds": ["place_003", "place_017", "place_022"],
+  "profileComplete": true
+}

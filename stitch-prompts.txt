@@ -1,0 +1,156 @@
+======================================================================
+CLUSTER 0  ·  paste into stitch.withgoogle.com
+======================================================================
+
+You are designing a screen that solves the pain point: (TODO · hand-label cluster 0 after reading § 5) for google maps.
+
+━━━ PAIN POINT (validated from 41 interview quotes) ━━━
+(TODO · hand-label cluster 0 after reading § 5)
+
+━━━ USER VOICE — top-cosine verbatim from the interview cluster ━━━
+- "task 1 -7/7"  (S2_I006)
+- "Task 2 - 6/7"  (S2_I005)
+- "Task 1- 6/7"  (S2_I005)
+
+━━━ PERSONA ━━━
+working adult
+
+━━━ PLATFORM + CONSTRAINTS ━━━
+Platform:          mobile (iOS + Android)
+Accessibility:     WCAG 2.2 AA
+Brand tone:        calm, focused, minimal
+
+Must include:
+- clear primary action button
+- descriptive empty state
+- non-modal error handling
+
+━━━ STYLE + COGNITIVE-SCIENCE DIRECTION ━━━
+- Keep the primary path to resolving the pain point within 2 taps (Fitts's Law — minimize distance × width).
+- Cap simultaneous choices on any screen at 5 (Miller's Law — 7 ± 2, chunk aggressively).
+- Use progressive disclosure for secondary actions (Hick's Law — decision time scales with log of choices).
+- Design the empty, loading, and error states alongside the happy path.
+
+━━━ OUTPUT FORMAT ━━━
+Return: (1) high-fidelity mobile screen, (2) 2-sentence rationale explaining
+how each pain-point quote above is addressed, (3) list of 2-3 alternative
+variants I can A/B test.
+
+
+======================================================================
+CLUSTER 1  ·  paste into stitch.withgoogle.com
+======================================================================
+
+You are designing a redesigned home screen with pinned frequent routes and one-tap navigation for google maps.
+
+━━━ PAIN POINT (validated from 14 interview quotes) ━━━
+Busy working adults cannot complete their daily commute efficiently due to unreliable or slow route suggestions.
+
+━━━ USER VOICE — top-cosine verbatim from the interview cluster ━━━
+- "searches in the main tab vegetarian restaurants. then keeps looking at various options in the scrolling list. all over the place. suggestions are wrong (non-veg options presented)"  (S1_I004)
+- "clicked on restaurant tab, toggled at various locations on map, clicked on each location provided. looked at ratings, reviews and photos to decide which restaurant."  (S2_I006)
+- "ah let me see opens up restaurant tab and stares at it and scrolls excessively. he is thinking about what he wants to eat(something not heavy, healthy, and nearby) and then finds it."  (S1_I003)
+
+━━━ PERSONA ━━━
+25yo, working adult
+
+━━━ PLATFORM + CONSTRAINTS ━━━
+Platform:          mobile (iOS + Android)
+Accessibility:     WCAG 2.2 AA
+Brand tone:        calm, focused, minimal
+
+Must include:
+- clear primary action button
+- descriptive empty state
+- non-modal error handling
+
+━━━ STYLE + COGNITIVE-SCIENCE DIRECTION ━━━
+- Keep the primary path to resolving the pain point within 2 taps (Fitts's Law — minimize distance × width).
+- Cap simultaneous choices on any screen at 5 (Miller's Law — 7 ± 2, chunk aggressively).
+- Use progressive disclosure for secondary actions (Hick's Law — decision time scales with log of choices).
+- Design the empty, loading, and error states alongside the happy path.
+
+━━━ OUTPUT FORMAT ━━━
+Return: (1) high-fidelity mobile screen, (2) 2-sentence rationale explaining
+how each pain-point quote above is addressed, (3) list of 2-3 alternative
+variants I can A/B test.
+
+
+======================================================================
+CLUSTER 2  ·  paste into stitch.withgoogle.com
+======================================================================
+
+You are designing a redesigned turn-by-turn navigation screen with clearer rerouting feedback and alternatives for google maps.
+
+━━━ PAIN POINT (validated from 9 interview quotes) ━━━
+Users get stuck or rerouted unexpectedly during navigation, losing trust in the app mid-journey.
+
+━━━ USER VOICE — top-cosine verbatim from the interview cluster ━━━
+- "full time working adult. part time student. typical week. mornings at 5-7:30am and then head off to work at 8am. then spend the day at work until 6pm. leave and head off for classes after if he has. if not dance classes if its scheduled."  (S1_I003)
+- "I am a public servant. I take the public transport to work and reach at 9am and work till 6:30pm. After that, I head to the gym till about 8pm. This cycle repeats Monday through Friday."  (S1_I001)
+- "busy working individual. business owner 3.30am to 11pm everyday."  (S1_I028)
+
+━━━ PERSONA ━━━
+28 yo, working adult
+
+━━━ PLATFORM + CONSTRAINTS ━━━
+Platform:          mobile (iOS + Android)
+Accessibility:     WCAG 2.2 AA
+Brand tone:        calm, focused, minimal
+
+Must include:
+- clear primary action button
+- descriptive empty state
+- non-modal error handling
+
+━━━ STYLE + COGNITIVE-SCIENCE DIRECTION ━━━
+- Keep the primary path to resolving the pain point within 2 taps (Fitts's Law — minimize distance × width).
+- Cap simultaneous choices on any screen at 5 (Miller's Law — 7 ± 2, chunk aggressively).
+- Use progressive disclosure for secondary actions (Hick's Law — decision time scales with log of choices).
+- Design the empty, loading, and error states alongside the happy path.
+
+━━━ OUTPUT FORMAT ━━━
+Return: (1) high-fidelity mobile screen, (2) 2-sentence rationale explaining
+how each pain-point quote above is addressed, (3) list of 2-3 alternative
+variants I can A/B test.
+
+
+======================================================================
+CLUSTER 3  ·  paste into stitch.withgoogle.com
+======================================================================
+
+You are designing an onboarding re-entry screen that surfaces recent searches and contextual prompts for google maps.
+
+━━━ PAIN POINT (validated from 14 interview quotes) ━━━
+Infrequent users struggle to re-orient themselves with the app after gaps in usage.
+
+━━━ USER VOICE — top-cosine verbatim from the interview cluster ━━━
+- "Bad- doesn't recommend the shortest route sometimes. tries to unselect the long option, doesnt allow for customisation of route. choices they recommend are not the fastest."  (S2_I003)
+- "Good - able to find locations easily, bad- orientation of map is presented in a way not according to vehicle's driving direction"  (S2_I004)
+- "Good - able to find locations easily, bad- orientation of map is presented in a way not according to vehicle's driving direction"  (S2_I004)
+
+━━━ PERSONA ━━━
+Mechanical engineer
+
+━━━ PLATFORM + CONSTRAINTS ━━━
+Platform:          mobile (iOS + Android)
+Accessibility:     WCAG 2.2 AA
+Brand tone:        calm, focused, minimal
+
+Must include:
+- clear primary action button
+- descriptive empty state
+- non-modal error handling
+
+━━━ STYLE + COGNITIVE-SCIENCE DIRECTION ━━━
+- Keep the primary path to resolving the pain point within 2 taps (Fitts's Law — minimize distance × width).
+- Cap simultaneous choices on any screen at 5 (Miller's Law — 7 ± 2, chunk aggressively).
+- Use progressive disclosure for secondary actions (Hick's Law — decision time scales with log of choices).
+- Design the empty, loading, and error states alongside the happy path.
+
+━━━ OUTPUT FORMAT ━━━
+Return: (1) high-fidelity mobile screen, (2) 2-sentence rationale explaining
+how each pain-point quote above is addressed, (3) list of 2-3 alternative
+variants I can A/B test.
+
+
