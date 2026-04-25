@@ -6,6 +6,10 @@ import SearchView from './views/SearchView'
 import RestaurantView from './views/RestaurantView'
 import NavigationView from './views/NavigationView'
 import SavedView from './views/SavedView'
+import RestaurantsIndex from './views/restaurants/RestaurantsIndex'
+import RestaurantViewA from './views/restaurants/RestaurantViewA'
+import RestaurantViewB from './views/restaurants/RestaurantViewB'
+import RestaurantViewC from './views/restaurants/RestaurantViewC'
 
 const pageVariants = {
   initial: { opacity: 0, x: 12 },
@@ -53,8 +57,56 @@ function AnimatedRoutes() {
               </motion.div>
             }
           />
+          {/* Restaurant variants — index redirects to /restaurants/a */}
+          <Route path="restaurants" element={<RestaurantsIndex />} />
           <Route
-            path="restaurants"
+            path="restaurants/a"
+            element={
+              <motion.div
+                variants={pageVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                transition={pageTransition}
+                className="flex flex-col h-full overflow-hidden"
+              >
+                <RestaurantViewA />
+              </motion.div>
+            }
+          />
+          <Route
+            path="restaurants/b"
+            element={
+              <motion.div
+                variants={pageVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                transition={pageTransition}
+                className="flex flex-col h-full overflow-hidden"
+              >
+                <RestaurantViewB />
+              </motion.div>
+            }
+          />
+          <Route
+            path="restaurants/c"
+            element={
+              <motion.div
+                variants={pageVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                transition={pageTransition}
+                className="flex flex-col h-full overflow-hidden"
+              >
+                <RestaurantViewC />
+              </motion.div>
+            }
+          />
+          {/* Legacy preference-aware view — kept, accessible at /restaurants/legacy */}
+          <Route
+            path="restaurants/legacy"
             element={
               <motion.div
                 variants={pageVariants}
