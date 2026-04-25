@@ -43,6 +43,15 @@ export default function RestaurantViewA() {
   const [error, setError] = useState(false)
 
   useEffect(() => {
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","wh2i504ocr");
+    window.clarity?.("set", "page", "restaurants-a");
+  }, []);
+
+  useEffect(() => {
     setLoading(true)
     const t = setTimeout(() => setLoading(false), 300)
     return () => clearTimeout(t)
