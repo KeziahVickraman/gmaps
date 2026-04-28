@@ -1,6 +1,7 @@
 import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import AppShell from './components/layout/AppShell'
+import HomePage from './views/HomePage'
 import HomeView from './views/HomeView'
 import SearchView from './views/SearchView'
 import RestaurantView from './views/RestaurantView'
@@ -25,6 +26,7 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait" initial={false}>
       <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<HomePage />} />
         <Route path="/" element={<AppShell />}>
           <Route index element={<Navigate to="/home" replace />} />
           <Route
